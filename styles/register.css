@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+line-height:1;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:ivory;
+}
+
+section {
+height:100%;
+width:100%;
+position: absolute; background: radial-gradient(#222,#000);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body {
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container {
+height: 100%;
+align-content: center;
+}
+
+.card {
+height: 450px;
+margin-top: 150px;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span {
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover {
+color: white;
+cursor: pointer;
+}
+
+.card-header h3 {
+color: white;
+}
+
+.social_icon {
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span {
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+ 
+input:focus {
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+h2 {
+    position:absolute;
+    top:40%;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:4em;
+    text-align:center;
+    transform:translate;
+    color:#fff;
+    transform:translateY (-50%);
+}
+
+* {
+  box-sizing: border-box;
+}  
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}  
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones and tablets: */
+  [class*="col-"] {
+    width: 100%;
+  }
+} 
+
+a:hover {  
+    background-color:yellow;  
+}
+
+.error_message {  
+    color: crimson; font-style:italic; padding:10px; 
+}   
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+.feedback {  
+    color: crimson; font-style:italic; padding:10px; 
+}  
+
+.remember {
+color: white;
+}
+
+.remember input {
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn {
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover {
+color: black;
+background-color: yellow;
+}
+
+.links {
+color: white;
+}
+
+.links a {
+margin-left: 4px;
+}
+
+.error_message {  
+    color: crimson; font-style:italic; padding:10px; 
+}   
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+  .feedback {  
+    color: crimson; font-style:italic; padding:10px; 
+} 

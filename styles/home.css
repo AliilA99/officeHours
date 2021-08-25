@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+line-height:1;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:ivory;
+}
+
+section {
+height:100%;
+width:100%;
+position: absolute; background: radial-gradient(#222,#000);
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.leaf {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.leaf div {
+position:absolute;
+display:block ;
+}
+
+.leaf div:nth-child(1) {
+    left:20%; 
+    animation:fall 15s linear infinite;
+    animation-delay:-2s;
+}
+
+.leaf div:nth-child(2) {
+    left:70%; 
+    animation:fall 15s linear infinite;
+    animation-delay:-4s;
+}
+
+.leaf div:nth-child(3) {
+    left:10%; 
+    animation:fall 20s linear infinite;
+    animation-delay:-7s;
+    
+}
+
+.leaf div:nth-child(4) {
+    left:50%; 
+   animation:fall 18s linear infinite; 
+   animation-delay:-5s;
+}
+
+.leaf div:nth-child(5) {
+    left:85%; 
+    animation:fall 14s linear infinite;
+    animation-delay:-5s;
+}
+
+.leaf div:nth-child(6) {
+    left:15%; 
+    animation:fall 16s linear infinite;
+    animation-delay:-10s;
+}
+
+.leaf div:nth-child(7) {
+    left:90%; 
+    animation:fall 15s linear infinite;
+    animation-delay:-4s;
+}
+
+@keyframes fall {
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+}
+
+.leaf1 {
+    transform: rotateX(180deg);
+}
+
+h2 {
+    position:absolute;
+    top:40%;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:4em;
+    text-align:center;
+    transform:translate;
+    color:#fff;
+    transform:translateY (-50%);
+}
+
+* {
+  box-sizing: border-box;
+}  
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}  
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones and tablets: */
+  [class*="col-"] {
+    width: 100%;
+  }
+} 
+
+a:hover {  
+    background-color:yellow;  
+}
+
+.error_message {  
+    color: crimson; font-style:italic; padding:10px; 
+}   
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+.feedback {  
+    color: crimson; font-style:italic; padding:10px; 
+}  
+
+
+
